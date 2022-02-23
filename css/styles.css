@@ -90,7 +90,7 @@ body{
 
 
 .gif{
-  width: 40%;
+  width: 30%;
   margin: auto;
   margin-top: 32px;
 }
@@ -104,6 +104,9 @@ body{
     opacity: 1;
   }
 }
+
+
+
 
 
 @media (max-width : 1200px) {
