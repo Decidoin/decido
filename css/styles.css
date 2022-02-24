@@ -31,7 +31,7 @@ body{
 .inputs{
   width: 60%;
   margin: auto;
-  margin-top: 64px;
+  margin-top: 128px;
   min-height: 50vh;
 }
 
@@ -52,7 +52,7 @@ body{
   padding: 16px 8px;
   width: 100%;
   border : 1px solid #fbd2d7;
-  margin-bottom: 30px;
+  margin-bottom: 64px;
 }
 
 .inputs input::placeholder , .inputs textarea::placeholder{
@@ -71,9 +71,13 @@ body{
   width: 80%;
   margin: auto;
   position: absolute;
-  bottom: 64px;
+  bottom: 110px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.decide.aaa{
+  bottom: 64px;
 }
 
 .decide a{
@@ -102,7 +106,7 @@ body{
   top:50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  width: 50%;
+  width: 40%;
   opacity: 0;
   visibility: hidden;
   transition: 0.5s;
@@ -128,14 +132,29 @@ body{
 
 }
 
+
+.modal__content p{
+  font-size: 22px;
+  width: 90%;
+  margin: auto;
+  margin-top: 32px;
+}
+
 .modal__content .decide{
   width: 100%;
+  position: static;
+  transform: translate(0,0);
+
+}
+
+.modal__content .decide a{
+  width: 55%;
 }
 
 .gif{
   width: 30%;
   margin: auto;
-  margin-top: 32px;
+  margin-top: 72px;
 }
 
 @keyframes fadein {
@@ -191,7 +210,7 @@ body{
   }
 
   .inputs input{
-    margin-bottom: 30px;
+    margin-bottom: 48px;
   }
 
   .decide{
@@ -208,6 +227,36 @@ body{
     width: 90%;
   }
 
+  .modal__content{
+    padding: 8px;
+  }
+
+  .modal__content .decide{
+    bottom: 32px;
+  }
+
+  .modal__content p{
+    font-size: 18px;
+    width: 95%;
+    margin: auto;
+    margin-top: 32px;
+  }
+
+  .modal__content .decide{
+    width: 100%;
+    bottom: 64px;
+  }
+
+  .modal__content .decide a{
+    width: 65%;
+
+  }
+
+
+  .comma_text{
+    display: block;
+    margin-top: 4px;
+  }
   .gif{
     width: 90%;
     margin-top: 64px;
@@ -215,11 +264,27 @@ body{
   }
 }
 
+
+
+@media (max-width: 410px) {
+
+    .modal__content .decide a{
+      width: 65%;
+      padding: 16px 8px;
+      font-size: 16px;
+    }
+}
+
+
 @media (max-width : 374px) {
   .heading h1{
     width: 95%;
     margin: auto;
   }
+
+
+
+
   .gif{
     margin-bottom: 50%;
   }
@@ -230,5 +295,6 @@ body{
   .decide{
     position: static;
     transform: translateX(0);
+    
   }
 }
