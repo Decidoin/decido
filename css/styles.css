@@ -165,6 +165,10 @@ body{
     min-height: 43vh;
   }
 
+  .modal{
+    width: 75%;
+  }
+
   .gif{
     width: 70%;
   }
@@ -198,6 +202,10 @@ body{
   .decide a{
     width: 80%;
 
+  }
+
+  .modal{
+    width: 90%;
   }
 
   .gif{
