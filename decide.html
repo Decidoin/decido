@@ -6,6 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Decide</title>
   <link rel="stylesheet" href="./css/styles.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-221311672-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-221311672-1');
+</script>
+
 </head>
 <body>
     <div class="heading">
@@ -14,7 +24,7 @@
 
     <div class="inputs">
       <p>WHAT'S ON YOUR MIND?</p>
-      <input type="text" name="" value="" placeholder="What do I eat today?">
+      <input type="text" name="title" value="" placeholder="What do I eat today?">
 
       <p>what are your options? add a comma after every option</p>
       <textarea name="options" rows="8" cols="80" placeholder="Hot hot Idli, Crispy Dosa, Creamy Pasta, Parathas"></textarea>
@@ -24,6 +34,20 @@
       <a href="javascript:void(0)" onclick="findRadom()">Decide For me</a>
 
       <a href="transition.html" id="transition"></a>
+    </div>
+
+
+    <div class="modal" id="modal">
+      <div class="modal__content">
+
+      <p>
+        ‘This-I-Do’ can only happen, on Decido, if you answer all the questions.
+      </p>
+
+      <div class="decide">
+        <a href="javascript:void(0)" onclick="toggleModal()">Ok. Let me Decido</a>
+      </div>
+    </div>
     </div>
 
     <script src="./radompicker.js" charset="utf-8"></script>

@@ -32,36 +32,38 @@ body{
 .content_container{
     display: grid;
     width: 80%;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     width: 80%;
     margin: auto;
     justify-content: center;
-    align-items: center;
-    padding-top: 50vh;
-    transform: translateY(-30%);
+    padding-top: 20vh;
+
 
 }
 
 
 .s1{
-
-  text-align: left;
+  text-align: center;
   transition: 0.5s;
   animation: 4s fadein ;
+  min-height: 50vh;
 }
 
 
 .s1 .title h1{
   font-family: 'Playfair Display', serif;
   font-size: 88px;
-    font-weight: 500;
+  font-weight: 500;
+  margin-bottom: 64px;
 }
 
 .s1 .descp p{
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   width: 80%;
+  margin: auto;
   margin-top: 8px;
+
 }
 
 .s2{
@@ -89,9 +91,30 @@ body{
   margin-bottom: 32px;
 }
 
-.s2 .about{
-  color : #fbd2d7;
-  display: none;
+.decide{
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.decide a{
+  color : black;
+  background: #fbd2d7;
+  display: block;
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  padding: 16px 32px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  margin-top: 32px;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
 }
 
 
@@ -115,51 +138,52 @@ body{
 
 @media (max-width : 1023px) {
   .s1 .title h1{
-    font-size: 64px;
+    font-size: 70px;
   }
 
   .s1 .descp p{
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
 @media (max-width : 767px) {
   .content_container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+
     height: 95vh;
     transform: translateY(0);
     padding-top: 0;
     flex-direction: column;
   }
 
-  .nav{
-    display: none;
+  .decide{
+    bottom: 64px;
   }
 
 
   .s1{
-    margin-top: 50%;
+    margin-top: 30%;
     text-align: center;
+    min-height: 30vh;
   }
 
 
   .s1 .title h1{
-    font-size: 48.8px;
+    font-size: 70px;
     font-weight: 400;
     margin-bottom: 64px;
   }
 
   .s1 .descp p {
     width: 100%;
-    font-size: 27px;
+    font-size: 24px;
     font-weight: 400;
   }
 
   .s2{
     flex-direction: column;
-    width: 90%;
+    width: 100%;
   }
 
   .s2 .try{
@@ -170,11 +194,13 @@ body{
     display: block;
   }
 
+  .decide{
+    padding-bottom: 16px;
+  }
 
-  .s2 a{
+  .decide a{
     width: 80%;
-    margin: auto;
-    font-size: 18px;
+
   }
 }
 

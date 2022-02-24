@@ -1,7 +1,14 @@
 
 
 function findRadom() {
+  let title = document.getElementsByName('title')[0].value
   let values = document.getElementsByName('options')[0].value.split(",");
+
+  if(title.length == 0 || (values.length == 1 && values[0] == "")){
+    toggleModal();
+    return;
+  }
+  
   let index = Math.floor(Math.random() * (values.length))
 
   if(values.length > 0 && values[index] != ""){
@@ -17,4 +24,9 @@ function findRadom() {
       }
     }
   }
+}
+
+
+function toggleModal(){
+  document.getElementById('modal').classList.toggle('active');
 }
