@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap');
 
 @font-face {
-  font-family: 'School-Holic-5-School-Holic-5';
-    src:  url('School-Holic-5-School-Holic-5.ttf.woff') format('woff'),
-    url('School-Holic-5-School-Holic-5.ttf.svg#School-Holic-5-School-Holic-5') format('svg'),
-    url('School-Holic-5-School-Holic-5.ttf.eot'),
-    url('School-Holic-5-School-Holic-5.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'SF-Buttacup-Lettering-Shaded';
+    src:url('SF-Buttacup-Lettering-Shaded.ttf.woff') format('woff'),
+        url('SF-Buttacup-Lettering-Shaded.ttf.svg#SF-Buttacup-Lettering-Shaded') format('svg'),
+        url('SF-Buttacup-Lettering-Shaded.ttf.eot'),
+        url('SF-Buttacup-Lettering-Shaded.ttf.eot?#iefix') format('embedded-opentype');
+        font-weight: normal;
+        font-style: normal;
 }
 
 
@@ -34,7 +34,7 @@ body{
 
 
 .heading{
-  font-family: 'School-Holic-5-School-Holic-5';
+  font-family: 'SF-Buttacup-Lettering-Shaded';
   text-align: center;
   padding-top: 128px;
 }
@@ -48,7 +48,7 @@ body{
 
 
 .ans{
-  font-family: 'School-Holic-5-School-Holic-5';
+  font-family: 'SF-Buttacup-Lettering-Shaded';
   font-weight: 400;
   font-size: 43px;
   text-align: center;

@@ -4,11 +4,11 @@ Installing Webfonts
 2. Add this code to your website:
 
 @font-face {
-    font-family: 'School-Holic-5-School-Holic-5';
-    src:url('School-Holic-5-School-Holic-5.ttf.woff') format('woff'),
-        url('School-Holic-5-School-Holic-5.ttf.svg#School-Holic-5-School-Holic-5') format('svg'),
-        url('School-Holic-5-School-Holic-5.ttf.eot'),
-        url('School-Holic-5-School-Holic-5.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-family: 'SF-Buttacup-Lettering-Shaded';
+    src:url('SF-Buttacup-Lettering-Shaded.ttf.woff') format('woff'),
+        url('SF-Buttacup-Lettering-Shaded.ttf.svg#SF-Buttacup-Lettering-Shaded') format('svg'),
+        url('SF-Buttacup-Lettering-Shaded.ttf.eot'),
+        url('SF-Buttacup-Lettering-Shaded.ttf.eot?#iefix') format('embedded-opentype'); 
     font-weight: normal;
     font-style: normal;
 }
@@ -16,7 +16,7 @@ Installing Webfonts
 Add the font name to your CSS styles. For example:
 
 h1 { 
-   font-family: 'School-Holic-5-School-Holic-5';
+   font-family: 'SF-Buttacup-Lettering-Shaded';
 }  
 
 Troubleshooting Webfonts
